@@ -3,6 +3,7 @@ const graphqlHTTP = require('express-graphql');
 const schema = require('./schema/schema');
 const mongoose = require("mongoose");
 const cors = require('cors');
+const path = require('path');
 require("dotenv").config();
 
 
@@ -27,6 +28,15 @@ app.use('/graphql', graphqlHTTP({
   graphiql: true
 }));
 
+//Serve Static Assests if in production
+
+if (process.env.NODE_ENV === production) {
+  //Set a static folder
+  app.use(express.static('client/build'));
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
+}
 
 
 app.listen(process.env.PORT || 4000, () => {
