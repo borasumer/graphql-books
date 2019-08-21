@@ -5,8 +5,6 @@ import { ApolloProvider } from 'react-apollo';
 import AddBook from './components/AddBook';
 import BookContextProvider from './contexts/BookContext';
 
-
-
 //ApolloClient Setup
 const client = new ApolloClient({
   uri: "https://intense-scrubland-62590.herokuapp.com/graphql",
