@@ -28,7 +28,7 @@ const AddBook = (props) => {
           }))}
         </select>
       </div>
-      <button onClick={(e) => handleSubmit(e)}>+</button>
+      <button onClick={(e) => handleSubmit(e)}>Add</button>
     </form>
   );
 }

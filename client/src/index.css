@@ -32,6 +32,7 @@ color:#880e4f
   left:0;
   bottom:0;
   width: 400px;
+  padding: 40px;
 }
 #field{
   display:grid;
@@ -47,18 +48,18 @@ margin:4px;
 padding: 6px;
 box-sizing: border-box;
 }
-
 form button{
   color:#fff;
   font-size: 2em;
   background: #ad1457;
   border:0;
   padding: 0 10px;
-  border-radius: 50%;
+  border-radius: 5%;
   cursor: pointer;
   position: absolute;
   bottom:10px;
-  left:10px;
+  right:35px;
+  font-size: 18px;
 }
 #book-details{
   position: fixed;
@@ -73,7 +74,6 @@ form button{
   box-sizing:border-box;
   color:#fff;
 }
-
 #book-details li{
   color:#fff;
   border:1px solid #fff;
