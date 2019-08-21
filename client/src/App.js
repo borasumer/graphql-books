@@ -7,7 +7,7 @@ import BookContextProvider from './contexts/BookContext';
 
 //ApolloClient Setup
 const client = new ApolloClient({
-  uri: "https://intense-scrubland-62590.herokuapp.com/graphql",
+  uri: "https://booklist-mern-graphql.herokuapp.com/graphql",
 });
 
 function App() {
